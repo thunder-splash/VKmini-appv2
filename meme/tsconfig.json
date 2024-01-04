@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "sourceMap": true,
+    "jsx": "react",
+    "baseUrl": "./src",
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "lib": ["ES2015", "DOM"],
+    "types": ["node"],
+    "paths": {
+      "*": ["types/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

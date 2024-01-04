@@ -1,0 +1,65 @@
+{
+    "name": "mini-app",
+    "version": "0.0.0",
+    "scripts": {
+        "start": "cross-env PORT=10888 HTTPS=true react-scripts start",
+        "build": "react-scripts build",
+        "predeploy": "npm run build",
+        "deploy": "vk-miniapps-deploy"
+    },
+    "engines": {
+        "node": ">=12.0.0"
+    },
+    "keywords": [],
+    "license": "MIT",
+    "dependencies": {
+        "@reatom/core-v2": "^3.1.2",
+        "@reatom/framework": "^3.4.30",
+        "@reatom/npm-react": "^3.8.1",
+        "@reatom/react-v1": "^3.1.5",
+        "@reatom/react-v2": "^3.1.0",
+        "@vkontakte/icons": "^2.90.0",
+        "@vkontakte/vk-bridge": "latest",
+        "@vkontakte/vk-miniapps-deploy": "0.0.25",
+        "@vkontakte/vkui": "5.1.0",
+        "antd": "^5.12.6",
+        "babel-eslint": "^10.1.0",
+        "compose-function": "^3.0.3",
+        "dotenv-webpack": "^8.0.1",
+        "eruda": "^2.4.1",
+        "eruda-code": "^2.0.0",
+        "eruda-dom": "^2.0.0",
+        "os-browserify": "^0.3.0",
+        "path-browserify": "^1.0.1",
+        "prop-types": "^15.7.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.21.1"
+    },
+    "devDependencies": {
+        "@types/react-dom": "^18.2.18",
+        "@types/sass": "^1.45.0",
+        "cross-env": "^7.0.3",
+        "react-hot-loader": "^4.13.0",
+        "react-scripts": "^5.0.1",
+        "sass": "^1.69.6"
+    },
+    "resolutions": {
+        "react-scripts/webpack-dev-server/yargs/yargs-parser": ">=18.1.2"
+    },
+    "overrides": {
+        "es5-ext@^0.10.50": "0.10.53"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
