@@ -1,15 +1,8 @@
 import React, {useState} from "react";
 import {Button, Checkbox, Input, Layout, List, Modal, Row, Space} from "antd";
 import styles from "./styles.module.scss";
-import {atom} from "@reatom/core";
 import {useAtom} from "@reatom/npm-react";
-
-type Task = {
-    id: number;
-    name: string;
-    title: string
-    completed: boolean;
-};
+import { Task } from "../../shared/api"
 
 const TasksListPage = () => {
 
@@ -18,8 +11,7 @@ const TasksListPage = () => {
     const [tasks, setTasks] = useState<Task[]>([]);
     const [newTaskName, setNewTaskName] = useState("");
     const [newTaskTitle, setNewTaskTitle] = useState("");
-    const selectedTaskAtom = atom<Task | null>(null, "selectedTaskAtom");
-    const [selectedTask, setSelectedTask] = useAtom(selectedTaskAtom);
+    const [selectedTask, setSelectedTask] = useAtom<Task | null>(null);
 
     const handleChange = (task: Task) => {
         const updatedTasks = tasks.map((t) =>
@@ -34,6 +26,7 @@ const TasksListPage = () => {
             name: newTaskName,
             title: newTaskTitle,
             completed: false,
+            taskListId: 1,
         };
         setTasks([...tasks, newTask]);
         setNewTaskName("");

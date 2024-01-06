@@ -4,7 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e26c1a56-47f7-4027-a7f2-857ed845da12" name="Changes" comment="" />
+    <list default="true" id="e26c1a56-47f7-4027-a7f2-857ed845da12" name="Changes" comment="Первая версия рабочего сервера без запросов к нему">
+      <change afterPath="$PROJECT_DIR$/meme/src/shared/api/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meme/src/shared/api/models.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meme/src/shared/api/typicode/models.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/controllers/taskController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/controllers/taskListController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/controllers/userController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/error/ApiError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/middlewares/ErrorHandlingMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/middlewares/authMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/middlewares/checkRoleMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/middlewares/validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/models/models.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/routes/taskListRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/routes/taskRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/routes/userRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meme/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/meme/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meme/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/meme/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meme/src/pages/tasks-list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meme/src/pages/tasks-list/index.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +44,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+        <option value="Dockerfile" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -27,26 +63,29 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2aLkllHxLhKyEPyuKfposozpPwO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/WSProjects/VKmini-appv2/meme/src/pages/task-card",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/WSProjects/VKmini-appv2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\WSProjects\VKmini-appv2\meme\src\pages\task-card" />
@@ -54,6 +93,9 @@
       <recent name="C:\WSProjects\VKmini-appv2\meme" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\WSProjects\VKmini-appv2\server\app\middlewares" />
+      <recent name="C:\WSProjects\VKmini-appv2\server" />
+      <recent name="C:\WSProjects\VKmini-appv2\server\src" />
       <recent name="C:\WSProjects\VKmini-appv2\meme" />
       <recent name="C:\WSProjects\VKmini-appv2\meme\src" />
     </key>
@@ -68,10 +110,48 @@
       <updated>1704105399361</updated>
       <workItem from="1704105400414" duration="1779000" />
       <workItem from="1704107259703" duration="41104000" />
+      <workItem from="1704373823809" duration="721000" />
+      <workItem from="1704374564055" duration="4229000" />
+      <workItem from="1704429448072" duration="4597000" />
+      <workItem from="1704442180572" duration="1038000" />
+      <workItem from="1704571458577" duration="7060000" />
     </task>
+    <task id="LOCAL-00001" summary="initial">
+      <option name="closed" value="true" />
+      <created>1704373979496</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704373979496</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial">
+      <option name="closed" value="true" />
+      <created>1704374075617</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704374075617</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial" />
+    <MESSAGE value="Первая версия рабочего сервера без запросов к нему" />
+    <option name="LAST_COMMIT_MESSAGE" value="Первая версия рабочего сервера без запросов к нему" />
   </component>
 </project>
